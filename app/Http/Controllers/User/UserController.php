@@ -12,9 +12,9 @@ class UserController extends Controller
 {
 
 
-    public function get()
+    public function getAll()
     {
-        $data = User::getAll();
+        $data = User::get();
         if (!$data) {
             return Response::error("Nenhum usuário encontrado", 404);
         }

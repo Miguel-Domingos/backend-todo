@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\DB;
 
 class TaskController extends Controller
 {
-    public function get()
+    public function getAll()
     {
         $data = Task::with(['users:id,name'])->get()->map(function ($task) {
             $task->users->makeHidden('pivot');

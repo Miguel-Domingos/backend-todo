@@ -42,7 +42,7 @@ Route::prefix("v1")->group(function () {
         });
 
         Route::prefix("tasks")->controller(TaskController::class)->group(function () {
-            Route::get("/", "get");
+            Route::get("/", "getAll");
             Route::post("create", "create");
             Route::delete("delete/{task?}", "delete");
             Route::put("update/{task?}", "update");
