@@ -69,9 +69,7 @@ php artisan db:seed
 
 ### 4. credencias criadas automaticamente
 
-O seeder `AdminSeeder` irá adicionar o seguintes usuário ao banco de dados:
-
--   **Admin User**
+-   **Credencias**
     -   Nome: Admin Admin
     -   Email: admin@gmail.com
     -   Senha: 12345678
